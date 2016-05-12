@@ -35,10 +35,10 @@ namespace rockEmSockumMeatbags
         {
             return health;
         }
-        public void isHit(int damage)
+        public int hit(int damage)
         {
             health -= damage;
-            getHealth();
+            return getHealth();
         }
         public void changeSpeed(int slow)
         {
