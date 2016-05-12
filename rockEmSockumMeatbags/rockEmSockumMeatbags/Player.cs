@@ -17,11 +17,11 @@ namespace rockEmSockumMeatbags
 {
     class Player
     {
-        private int health = 0;
-        private int damage = 0;
-        private int speed = 0;
+        private int health = 100;
+        private int damage = 10;
+        private int speed = 5;
         private string name = "";
-        private int attackspeed = 0;
+        private int attackspeed = 2;
 
         public Player(ContentManager content, int health, int damage, int speed, string name, int attackspeed)
         {
@@ -31,6 +31,21 @@ namespace rockEmSockumMeatbags
             this.name = name;
             this.attackspeed = attackspeed;
         }
+        public int getHealth()
+        {
+            return health;
+        }
+        public void isHit(int damage)
+        {
+            health -= damage;
+            getHealth();
+        }
+        public void changeSpeed(int slow)
+        {
+            speed += slow;
+
+        }
+         
 
     }
 }
