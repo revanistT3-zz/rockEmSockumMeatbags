@@ -26,10 +26,10 @@ namespace rockEmSockumMeatbags
         public Player(ContentManager content, int health, int damage, int speed, string name, int attackspeed)
         {
            this.health = health;
-            this.damage =damage;
-            this.speed = speed;
-            this.name = name;
-            this.attackspeed = attackspeed;
+           this.damage = damage;
+           this.speed = speed;
+           this.name = name;
+           this.attackspeed = attackspeed;
         }
         public int getHealth()
         {
