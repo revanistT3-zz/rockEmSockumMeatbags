@@ -60,7 +60,7 @@ namespace rockEmSockumMeatbags
             spritebatch.Draw(healthBar, 
                 new Rectangle(area.X, area.Y, area.Width, area.Height/2), 
                 Color.Red);
-            spritebatch.DrawString(font, name,new Vector2(area.X, area.Y + area.Height) , Color.White);
+            spritebatch.DrawString(font, name, new Vector2(area.X, area.Y + area.Height) , Color.White);
             spritebatch.End();
         }
 

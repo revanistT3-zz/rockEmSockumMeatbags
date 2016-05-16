@@ -18,7 +18,8 @@ namespace rockEmSockumMeatbags
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        Player p;
+        Player p1;
+        Player p2;
 
         public Game1()
         {
@@ -70,7 +71,8 @@ namespace rockEmSockumMeatbags
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
-            p = new Player(this.Content,50, 50, 50, "generic", 50);
+            p1 = new Player(this.Content, 50, 50, 50, "left player",  50);
+            p2 = new Player(this.Content, 50, 50, 50, "right player", 50);
             
 
             // TODO: Add your update logic here
@@ -85,7 +87,8 @@ namespace rockEmSockumMeatbags
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
-            p.drawHud(spriteBatch, new Rectangle(10, 0, 30, 10));
+            p1.drawHud(spriteBatch, new Rectangle(10, 0, 300, 30));
+            p2.drawHud(spriteBatch, new Rectangle(GraphicsDevice.Viewport.Width -310, 0, 300, 30));
             // TODO: Add your drawing code here
 
             base.Draw(gameTime);
