@@ -20,6 +20,7 @@ namespace rockEmSockumMeatbags
         SpriteBatch spriteBatch;
         Player p1;
         Player p2;
+        Timer timer;
 
         public Game1()
         {
@@ -48,7 +49,9 @@ namespace rockEmSockumMeatbags
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            p1 = new Player(this.Content, 50, 50, 50, "left player", 50);
+            p2 = new Player(this.Content, 50, 50, 50, "right player", 50);
+            timer = new Timer(content);
             // TODO: use this.Content to load your game content here
         }
 
@@ -71,9 +74,8 @@ namespace rockEmSockumMeatbags
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
-            p1 = new Player(this.Content, 50, 50, 50, "left player",  50);
-            p2 = new Player(this.Content, 50, 50, 50, "right player", 50);
-            
+
+            timer.update();
 
             // TODO: Add your update logic here
 
@@ -93,5 +95,7 @@ namespace rockEmSockumMeatbags
 
             base.Draw(gameTime);
         }
+
+        public ContentManager content { get; set; }
     }
 }
