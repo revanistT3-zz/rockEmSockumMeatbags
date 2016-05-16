@@ -6,3 +6,5 @@ rockEmSockumMeatbags/rockEmSockumMeatbagsContent/obj/x86/Debug/rockEmSockumMeatb
 rockEmSockumMeatbags/rockEmSockumMeatbags/obj/x86/Debug/rockEmSockumMeatbags.pdb
 rockEmSockumMeatbags.suo
 rockEmSockumMeatbags/rockEmSockumMeatbagsContent/obj/x86/Debug/ContentPipeline.xml
+*.cache
+rockEmSockumMeatbags/rockEmSockumMeatbags/obj/x86/Debug/rockEmSockumMeatbags.csproj.FileListAbsolute.txt
