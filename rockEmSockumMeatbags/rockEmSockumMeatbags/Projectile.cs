@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
@@ -27,7 +27,7 @@ namespace rockEmSockumMeatbags
         private Rectangle proj = new Rectangle(0, 0, 0, 0);
         private int damage;
         private string skin = "";
-       
+
         public Projectile(ContentManager content, int speed, int locationX, int locationY, int width, int height, int damage, string skin)
         {
             this.speed = speed;
@@ -37,11 +37,25 @@ namespace rockEmSockumMeatbags
             this.height = height;
             this.damage = damage;
             this.skin = skin;
+           
         }
-        public  End()
+        public Boolean endX(int endX)
         {
-
+            if (locationX == 0 - width || locationX == endX + width)
+            {
+                return true;
+            }
+            else return false;
         }
+        public Boolean endY(int endY)
+        {
+            if (locationY == 0 - height || locationY == endY + height)
+            {
+                return true;
+            }
+            else return false;
+        }
+
 
     }
 }

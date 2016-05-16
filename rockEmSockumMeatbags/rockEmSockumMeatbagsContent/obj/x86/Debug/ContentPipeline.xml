@@ -7,10 +7,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbagsContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbagsContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbagsContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbagsContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
