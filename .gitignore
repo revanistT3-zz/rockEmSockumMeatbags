@@ -5,6 +5,13 @@ rockEmSockumMeatbags/rockEmSockumMeatbags/obj/x86/Debug/Microsoft.Xna.Framework.
 rockEmSockumMeatbags/rockEmSockumMeatbagsContent/obj/x86/Debug/rockEmSockumMeatbagsContent.contentproj.FileListAbsolute.txt
 rockEmSockumMeatbags/rockEmSockumMeatbags/obj/x86/Debug/rockEmSockumMeatbags.pdb
 rockEmSockumMeatbags.suo
+<<<<<<< HEAD
 rockEmSockumMeatbags/rockEmSockumMeatbagsContent/obj/x86/Debug/ContentPipeline.xml
 *.cache
+=======
 rockEmSockumMeatbags/rockEmSockumMeatbags/obj/x86/Debug/rockEmSockumMeatbags.csproj.FileListAbsolute.txt
+rockEmSockumMeatbags/rockEmSockumMeatbagsContent/obj/x86/Debug/ContentPipeline.xml
+>>>>>>> origin/master
+rockEmSockumMeatbags/rockEmSockumMeatbags/obj/x86/Debug/rockEmSockumMeatbags.csproj.FileListAbsolute.txt
+rockEmSockumMeatbags/rockEmSockumMeatbags/obj/x86/Debug/rockEmSockumMeatbags.csproj.FileListAbsolute.txt
+rockEmSockumMeatbags/rockEmSockumMeatbagsContent/obj/x86/Debug/ContentPipeline.xml
