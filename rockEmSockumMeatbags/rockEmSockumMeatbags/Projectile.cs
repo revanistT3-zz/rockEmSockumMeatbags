@@ -85,10 +85,14 @@ namespace rockEmSockumMeatbags
                 lasttime1 = gameTime.TotalGameTime;
             }
         }
-        public Boolean hitPlayer(Player player)
+        public Boolean hitPlayer(Rectangle playersRectangle)
         {
+            if (proj.Intersects(playersRectangle))
+            {
+                return true;
+            }
             return false;
-            //if (proj.Intersects
+
         }
 
     }
