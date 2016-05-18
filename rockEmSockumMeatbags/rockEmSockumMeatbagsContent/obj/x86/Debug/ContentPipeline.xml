@@ -7,8 +7,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dmcrae17\Documents\Visual Studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\font.xnb</Output>
-      <Time>2016-05-16T07:58:01.541082-04:00</Time>
+      <Output>C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\font.xnb</Output>
+      <Time>2016-05-16T08:00:08.8535902-04:00</Time>
     </Item>
     <Item>
       <Source>blank.bmp</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dmcrae17\Documents\Visual Studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\blank.xnb</Output>
-      <Time>2016-05-16T07:58:01.5420819-04:00</Time>
+      <Output>C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\blank.xnb</Output>
+      <Time>2016-05-16T08:00:08.8545901-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -25,10 +25,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\dmcrae17\Documents\Visual Studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbagsContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\dmcrae17\Documents\Visual Studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\dmcrae17\Documents\Visual Studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbagsContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\dmcrae17\Documents\Visual Studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbagsContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbagsContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
