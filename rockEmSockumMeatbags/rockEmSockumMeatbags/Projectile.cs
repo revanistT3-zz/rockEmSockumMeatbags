@@ -37,7 +37,10 @@ namespace rockEmSockumMeatbags
             this.height = height;
             this.damage = damage;
             this.skin = skin;
-           
+            proj.X = locationX;
+            proj.Y = locationY;
+            proj.Width = width;
+            proj.Height = height;
         }
         public Boolean endX(int endX)
         {
@@ -55,7 +58,38 @@ namespace rockEmSockumMeatbags
             }
             else return false;  
         }
-        
+        public void goToLocation(int x, int y)
+        {
+            locationX = x;
+            locationY = y;        
+        }
+        public void draw(SpriteBatch spritebatch)
+        {
+            spritebatch.Begin();
+            
+            spritebatch.End();
+        }
+        public void animate(GameTime gameTime, string skin)
+        {
+            TimeSpan lasttime1 = new TimeSpan();
+            TimeSpan increment1 = new TimeSpan(0, 0, 0, 0, 100);
+            int texchan1 = 0;   
+            if (gameTime.TotalGameTime - lasttime1 > increment1)
+            {
+                texchan1++;
+                if (texchan1 > 1)
+                {
+                    texchan1 = 0;
+
+                }
+                lasttime1 = gameTime.TotalGameTime;
+            }
+        }
+        public Boolean hitPlayer(Player player)
+        {
+            return false;
+            //if (proj.Intersects
+        }
 
     }
 }
