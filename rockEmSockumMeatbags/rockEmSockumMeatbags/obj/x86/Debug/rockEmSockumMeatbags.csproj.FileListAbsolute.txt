@@ -5,3 +5,4 @@ C:\Users\dmcrae17\Documents\Visual Studio 2010\Projects\rockEmSockumMeatbags\roc
 C:\Users\dmcrae17\Documents\Visual Studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\obj\x86\Debug\rockEmSockumMeatbags.pdb
 C:\Users\dmcrae17\Documents\Visual Studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\font.xnb
 C:\Users\dmcrae17\Documents\Visual Studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\blank.xnb
+C:\Users\dmcrae17\Documents\Visual Studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\obj\x86\Debug\rockEmSockumMeatbags.csprojResolveAssemblyReference.cache

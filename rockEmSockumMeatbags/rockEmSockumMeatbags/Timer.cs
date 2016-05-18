@@ -50,10 +50,10 @@ namespace rockEmSockumMeatbags
                 : "";
             return front + seconds.ToString();
         }
-        public void Draw(SpriteBatch spritebatch)
+        public void Draw(SpriteBatch spritebatch, Vector2 vec)
         {
             spritebatch.Begin();
-            //spritebatch.DrawString(,);
+            spritebatch.DrawString(font, toString() , vec, Color.Tomato );
             spritebatch.End();
         }
     }

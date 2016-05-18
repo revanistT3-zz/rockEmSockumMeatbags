@@ -49,9 +49,9 @@ namespace rockEmSockumMeatbags
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            timer = new Timer(this.Content);
             p1 = new Player(this.Content, 50, 50, 50, "left player", 50);
             p2 = new Player(this.Content, 50, 50, 50, "right player", 50);
-            timer = new Timer(content);
             // TODO: use this.Content to load your game content here
         }
 
@@ -91,6 +91,7 @@ namespace rockEmSockumMeatbags
             GraphicsDevice.Clear(Color.CornflowerBlue);
             p1.drawHud(spriteBatch, new Rectangle(10, 0, 300, 30));
             p2.drawHud(spriteBatch, new Rectangle(GraphicsDevice.Viewport.Width -310, 0, 300, 30));
+            timer.Draw(spriteBatch, new Vector2(GraphicsDevice.Viewport.Width / 2, 0));
             // TODO: Add your drawing code here
 
             base.Draw(gameTime);
