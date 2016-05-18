@@ -24,7 +24,7 @@ namespace rockEmSockumMeatbags
         private int speed = 5;
         private string name = "";
         private int attackspeed = 2;
-
+        private Rectangle player = new Rectangle(0, 0, 0, 0);
         public Player(ContentManager content, int health, int damage, int speed, string name, int attackspeed)
         {
             this.health = health;
@@ -34,6 +34,7 @@ namespace rockEmSockumMeatbags
             this.attackspeed = attackspeed;
             this.healthBar = content.Load<Texture2D>("blank");
             this.font = content.Load<SpriteFont>("font");
+            KeyboardState keyboard1 = Keyboard.GetState();
             // private int strength = 0;
             //private int stamina = 0;
             //private int agility = 0;
@@ -63,6 +64,26 @@ namespace rockEmSockumMeatbags
             spritebatch.DrawString(font, name, new Vector2(area.X, area.Y + area.Height) , Color.White);
             spritebatch.End();
         }
-
+        public void moveRight()
+        {
+            //X--;
+        }
+        public void moveLeft()
+        {
+            //X++
+        }
+        public void duck()
+        {
+            //(crouch)
+        }
+        public void jump()
+        {
+            //forloop
+            //Y +=3;
+        }
+        public Rectangle getPlayerRectangle()
+        {
+            return player;
+        }
     }
 }
