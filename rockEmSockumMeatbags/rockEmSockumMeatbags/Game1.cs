@@ -38,6 +38,8 @@ namespace rockEmSockumMeatbags
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
+            graphics.PreferredBackBufferHeight = 700;
+            graphics.PreferredBackBufferWidth = 1300;
             Content.RootDirectory = "Content";
         }
 
