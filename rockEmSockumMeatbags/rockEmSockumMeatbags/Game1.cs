@@ -21,6 +21,7 @@ namespace rockEmSockumMeatbags
         Player p1;
         Player p2;
         Timer timer;
+        GameState state;
 
         public Game1()
         {
@@ -37,7 +38,6 @@ namespace rockEmSockumMeatbags
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
             base.Initialize();
         }
 
@@ -74,7 +74,11 @@ namespace rockEmSockumMeatbags
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
-
+            if (state == GameState.Paused)
+            {
+                return;
+            }
+            //delegate void TestDelegate(string s);
             timer.update();
 
             // TODO: Add your update logic here
