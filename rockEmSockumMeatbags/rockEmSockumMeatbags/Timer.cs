@@ -19,7 +19,6 @@ namespace rockEmSockumMeatbags
     {
         private int increment;
         private SpriteFont font;
-
         public Timer(ContentManager content) : this(content ,60*60)
         {
         }

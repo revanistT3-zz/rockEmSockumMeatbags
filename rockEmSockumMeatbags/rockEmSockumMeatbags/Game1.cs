@@ -23,6 +23,18 @@ namespace rockEmSockumMeatbags
         Timer timer;
         GameState state;
 
+        delegate void update(Game1 game);
+        update playing = delegate(Game1 game)
+        {
+            game.timer.update();
+        };
+        update drawPlaying = delegate(Game1 game)
+        {
+            game.p1.drawHud(game.spriteBatch, new Rectangle(10, 0, 300, 30));
+            game.p2.drawHud(game.spriteBatch, new Rectangle(game.GraphicsDevice.Viewport.Width - 310, 0, 300, 30));
+            game.timer.Draw(game.spriteBatch, new Vector2(game.GraphicsDevice.Viewport.Width / 2, 0));
+        };
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -74,13 +86,14 @@ namespace rockEmSockumMeatbags
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
+
             if (state == GameState.Paused)
             {
-                return;
             }
-            //delegate void TestDelegate(string s);
-            timer.update();
-
+            else
+            {
+                playing(this);
+            }
             // TODO: Add your update logic here
 
             base.Update(gameTime);
@@ -93,11 +106,12 @@ namespace rockEmSockumMeatbags
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
-            p1.drawHud(spriteBatch, new Rectangle(10, 0, 300, 30));
-            p2.drawHud(spriteBatch, new Rectangle(GraphicsDevice.Viewport.Width -310, 0, 300, 30));
-            timer.Draw(spriteBatch, new Vector2(GraphicsDevice.Viewport.Width / 2, 0));
+            
             // TODO: Add your drawing code here
-
+            if (state == GameState.Playing)
+            {
+                drawPlaying(this);
+            }
             base.Draw(gameTime);
         }
 
