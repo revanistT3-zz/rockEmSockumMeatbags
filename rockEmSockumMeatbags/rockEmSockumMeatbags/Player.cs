@@ -24,8 +24,10 @@ namespace rockEmSockumMeatbags
         private int speed = 5;
         private string name = "";
         private int attackspeed = 2;
-        private Rectangle player = new Rectangle(0, 0, 0, 0);
-        public Player(ContentManager content, int health, int damage, int speed, string name, int attackspeed)
+        private Rectangle player = new Rectangle(0, 0, 100, 50);
+        private int playerNum;
+        KeyboardState keyboard1 = Keyboard.GetState();
+        public Player(ContentManager content, int health, int damage, int speed, string name, int attackspeed, int playerNum)
         {
             this.health = health;
             this.damage = damage;
@@ -34,7 +36,7 @@ namespace rockEmSockumMeatbags
             this.attackspeed = attackspeed;
             this.healthBar = content.Load<Texture2D>("blank");
             this.font = content.Load<SpriteFont>("font");
-            KeyboardState keyboard1 = Keyboard.GetState();
+            this.playerNum = playerNum;
             // private int strength = 0;
             //private int stamina = 0;
             //private int agility = 0;
@@ -66,24 +68,43 @@ namespace rockEmSockumMeatbags
         }
         public void moveRight()
         {
-            //X--;
+            if (keyboard1.IsKeyDown(Keys.D))
+            {
+                player.X++;
+            }
         }
         public void moveLeft()
         {
-            //X++
+            if (keyboard1.IsKeyDown(Keys.A))
+            {
+                player.X--;
+            }
         }
         public void duck()
         {
-            //(crouch)
+            if (keyboard1.IsKeyDown(Keys.S))
+            {
+            }
+            
         }
         public void jump()
         {
-            //forloop
-            //Y +=3;
+            if (keyboard1.IsKeyDown(Keys.W))
+            {
+            for (int x = 0; x < 5; x++)
+            {
+             player.Y +=3;
+            }
+            }
+            
         }
         public Rectangle getPlayerRectangle()
         {
             return player;
+        }
+        public void load()
+        {
+             player = new Rectangle(0, 0, 100, 50);
         }
     }
 }

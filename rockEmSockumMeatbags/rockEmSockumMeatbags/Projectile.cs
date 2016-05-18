@@ -90,6 +90,7 @@ namespace rockEmSockumMeatbags
             if (proj.Intersects(playersRectangle))
             {
                 return true;
+                
             }
             return false;
 
