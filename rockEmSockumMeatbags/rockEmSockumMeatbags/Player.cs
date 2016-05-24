@@ -27,6 +27,11 @@ namespace rockEmSockumMeatbags
         private Rectangle player = new Rectangle(0, 0, 100, 50);
         private int playerNum;
         KeyboardState keyboard1 = Keyboard.GetState();
+        //private int strength = 0;
+        //private int stamina = 0;
+        //private int agility = 0;
+        //private int wisdom = 0;
+        //private int accuracy = 0;
         public Player(ContentManager content, int health, int damage, int speed, string name, int attackspeed, int playerNum)
         {
             this.health = health;
@@ -37,11 +42,6 @@ namespace rockEmSockumMeatbags
             this.healthBar = content.Load<Texture2D>("blank");
             this.font = content.Load<SpriteFont>("font");
             this.playerNum = playerNum;
-            // private int strength = 0;
-            //private int stamina = 0;
-            //private int agility = 0;
-            // private int wisdom = 0;
-            //  private int accuracy = 0;
         }
         public int getHealth()
         {
