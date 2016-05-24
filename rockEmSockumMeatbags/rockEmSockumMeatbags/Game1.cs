@@ -66,8 +66,9 @@ namespace rockEmSockumMeatbags
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
             timer = new Timer(this.Content);
-            p1 = new Player(this.Content, 50, 50, 50, "left player", 50);
-            p2 = new Player(this.Content, 50, 50, 50, "right player", 50);
+            p1 = new Player(this.Content, 50, 50, 50, "left player", 50,1);
+            //p1.load;
+            p2 = new Player(this.Content, 50, 50, 50, "right player", 50,1);
             // TODO: use this.Content to load your game content here
         }
 
