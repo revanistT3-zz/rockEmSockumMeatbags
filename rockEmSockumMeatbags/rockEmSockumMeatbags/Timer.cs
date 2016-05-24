@@ -28,9 +28,10 @@ namespace rockEmSockumMeatbags
             this.font = content.Load<SpriteFont>("font");
         }
 
-        public void update()
-        {
+        public Boolean update() //true  - time:  0
+        {                       //false - time: !0
             increment--;
+            return increment == 0;
         }
 
         public int seconds

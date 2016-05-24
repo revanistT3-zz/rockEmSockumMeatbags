@@ -8,6 +8,7 @@ namespace rockEmSockumMeatbags
     enum GameState
     {
         Playing,
-        Paused
+        Paused,
+        Over
     }
 }

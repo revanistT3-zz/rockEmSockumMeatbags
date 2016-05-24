@@ -26,7 +26,9 @@ namespace rockEmSockumMeatbags
         delegate void update(Game1 game);
         update playing = delegate(Game1 game)
         {
-            game.timer.update();
+            game.state = game.timer.update()
+                ? GameState.Over
+                : game.state;
         };
         update drawPlaying = delegate(Game1 game)
         {
@@ -89,12 +91,15 @@ namespace rockEmSockumMeatbags
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
-            if (state == GameState.Paused)
+            switch (state)
             {
-            }
-            else
-            {
-                playing(this);
+                case GameState.Paused:
+
+                    break;
+                case GameState.Playing:
+                    playing(this);
+                    break;
+
             }
             // TODO: Add your update logic here
 
