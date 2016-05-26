@@ -22,6 +22,7 @@ namespace rockEmSockumMeatbags
         Player p2;
         Timer timer;
         GameState state;
+        Projectile testproj;
 
         delegate void update(Game1 game);
         update playing = delegate(Game1 game)
@@ -64,6 +65,7 @@ namespace rockEmSockumMeatbags
         protected override void LoadContent()
         {
             // Create a new SpriteBatch, which can be used to draw textures.
+            testproj = new Projectile(Content, 1, 5, 100, 50, 50, 1, "ball");
             spriteBatch = new SpriteBatch(GraphicsDevice);
             timer = new Timer(this.Content);
             p1 = new Player(this.Content, 50, 50, 50, "left player", 50,1);
@@ -102,6 +104,11 @@ namespace rockEmSockumMeatbags
                     break;
 
             }
+
+
+            testproj.animate(gameTime, "ball");
+
+
             // TODO: Add your update logic here
 
             base.Update(gameTime);
@@ -115,12 +122,18 @@ namespace rockEmSockumMeatbags
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
             
+            
+           
+
+
+            
             // TODO: Add your drawing code here
             if (state == GameState.Playing)
             {
                 drawPlaying(this);
             }
             base.Draw(gameTime);
+            testproj.draw(spriteBatch);
         }
 
         public ContentManager content { get; set; }
