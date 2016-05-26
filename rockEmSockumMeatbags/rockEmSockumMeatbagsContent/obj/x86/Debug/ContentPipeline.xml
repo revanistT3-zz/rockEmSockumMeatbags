@@ -19,6 +19,42 @@
       <Output>C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\blank.xnb</Output>
       <Time>2016-05-16T08:00:08.8545901-04:00</Time>
     </Item>
+    <Item>
+      <Source>bs1.png</Source>
+      <Name>bs1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\bs1.xnb</Output>
+      <Time>2016-05-24T08:08:47.6847386-04:00</Time>
+    </Item>
+    <Item>
+      <Source>bs2.png</Source>
+      <Name>bs2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\bs2.xnb</Output>
+      <Time>2016-05-24T08:08:47.7247382-04:00</Time>
+    </Item>
+    <Item>
+      <Source>bs3.png</Source>
+      <Name>bs3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\bs3.xnb</Output>
+      <Time>2016-05-24T08:08:47.7647378-04:00</Time>
+    </Item>
+    <Item>
+      <Source>bs4.png</Source>
+      <Name>bs4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\bs4.xnb</Output>
+      <Time>2016-05-24T08:08:47.7647378-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

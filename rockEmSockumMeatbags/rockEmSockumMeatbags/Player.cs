@@ -37,6 +37,7 @@ namespace rockEmSockumMeatbags
             this.healthBar = content.Load<Texture2D>("blank");
             this.font = content.Load<SpriteFont>("font");
             this.playerNum = playerNum;
+
             // private int strength = 0;
             //private int stamina = 0;
             //private int agility = 0;

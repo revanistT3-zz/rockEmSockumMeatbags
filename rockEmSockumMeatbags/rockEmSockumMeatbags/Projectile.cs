@@ -27,14 +27,15 @@ namespace rockEmSockumMeatbags
         private Rectangle proj = new Rectangle(0, 0, 0, 0);
         private int damage;
         private string skin = "";
+        private Texture2D[] skins;
 
         public Projectile(ContentManager content, int speed, int locationX, int locationY, int width, int height, int damage, string skin)
         {
+            this.width = width;
+            this.height = height;
             this.speed = speed;
             this.locationX = locationX;
             this.locationY = locationY;
-            this.width = width;
-            this.height = height;
             this.damage = damage;
             this.skin = skin;
             proj.X = locationX;
@@ -69,16 +70,30 @@ namespace rockEmSockumMeatbags
             
             spritebatch.End();
         }
-        public void animate(GameTime gameTime, string skin)
+        public void animate(GameTime gameTime, string skin, ContentManager Content)
         {
+           
             TimeSpan lasttime1 = new TimeSpan();
             TimeSpan increment1 = new TimeSpan(0, 0, 0, 0, 100);
+            int x = 0;
             int texchan1 = 0;   
             if (gameTime.TotalGameTime - lasttime1 > increment1)
             {
-                texchan1++;
-                if (texchan1 > 1)
+                if (skin == "ball")
                 {
+                    
+                    x = 3;
+                    skins = new Texture2D[x];
+                    skins [0] =Content.Load<Texture2D>("bs1");
+                        skins [1] =Content.Load<Texture2D>("bs2");
+                        skins [2] =Content.Load<Texture2D>("bs3");
+                        skins[3] = Content.Load<Texture2D>("bs4");
+                       
+                }
+                texchan1++;
+                if (texchan1 > x)
+                {
+                    //skins[texchan1];
                     texchan1 = 0;
 
                 }
