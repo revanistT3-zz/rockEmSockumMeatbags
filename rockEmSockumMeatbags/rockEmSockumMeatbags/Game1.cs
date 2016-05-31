@@ -22,12 +22,9 @@ namespace rockEmSockumMeatbags
         Player p2;
         Timer timer;
         GameState state;
-<<<<<<< HEAD
         Player winner = null;
         SpriteFont font;
-=======
         Projectile testproj;
->>>>>>> origin/master
 
         public void playing()
         {
