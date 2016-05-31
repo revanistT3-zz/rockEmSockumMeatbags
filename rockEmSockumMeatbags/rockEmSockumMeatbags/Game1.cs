@@ -65,7 +65,7 @@ namespace rockEmSockumMeatbags
         protected override void LoadContent()
         {
             // Create a new SpriteBatch, which can be used to draw textures.
-            testproj = new Projectile(Content, 1, 5, 100, 50, 50, 1, "ball");
+            testproj = new Projectile(Content, 10, 5, 100, 50, 50, 1, "ball");
             spriteBatch = new SpriteBatch(GraphicsDevice);
             timer = new Timer(this.Content);
             p1 = new Player(this.Content, 50, 50, 50, "left player", 50,1);
@@ -93,7 +93,7 @@ namespace rockEmSockumMeatbags
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
-
+           
             switch (state)
             {
                 case GameState.Paused:
@@ -107,7 +107,7 @@ namespace rockEmSockumMeatbags
 
 
             testproj.animate(gameTime, "ball");
-
+             testproj.goRight();
 
             // TODO: Add your update logic here
 
