@@ -22,20 +22,27 @@ namespace rockEmSockumMeatbags
         Player p2;
         Timer timer;
         GameState state;
+        Player winner = null;
+        SpriteFont font;
 
-        delegate void update(Game1 game);
-        update playing = delegate(Game1 game)
+        public void playing()
         {
-            game.state = game.timer.update()
+            state = timer.update()
                 ? GameState.Over
-                : game.state;
-        };
-        update drawPlaying = delegate(Game1 game)
+                : state;
+        }
+        public void drawPlaying()
         {
-            game.p1.drawHud(game.spriteBatch, new Rectangle(10, 0, 300, 30));
-            game.p2.drawHud(game.spriteBatch, new Rectangle(game.GraphicsDevice.Viewport.Width - 310, 0, 300, 30));
-            game.timer.Draw(game.spriteBatch, new Vector2(game.GraphicsDevice.Viewport.Width / 2, 0));
-        };
+            p1.drawHud(spriteBatch, new Rectangle(10, 0, 300, 30));
+            p2.drawHud(spriteBatch, new Rectangle(GraphicsDevice.Viewport.Width - 310, 0, 300, 30));
+            timer.Draw(spriteBatch, new Vector2(GraphicsDevice.Viewport.Width / 2, 0));
+        }
+        public static void safeDraw(SpriteBatch spriteBatch, Action f)
+        {
+            spriteBatch.Begin();
+            f();
+            spriteBatch.End();
+        }
 
         public Game1()
         {
@@ -69,6 +76,7 @@ namespace rockEmSockumMeatbags
             p1 = new Player(this.Content, 50, 50, 50, "left player", 50,1);
             //p1.load;
             p2 = new Player(this.Content, 50, 50, 50, "right player", 50,1);
+            font = this.Content.Load<SpriteFont>("font");
             // TODO: use this.Content to load your game content here
         }
 
@@ -98,7 +106,7 @@ namespace rockEmSockumMeatbags
 
                     break;
                 case GameState.Playing:
-                    playing(this);
+                    playing();
                     break;
 
             }
@@ -106,7 +114,18 @@ namespace rockEmSockumMeatbags
 
             base.Update(gameTime);
         }
-
+        void win(Player p)
+        {
+            state = GameState.Over;
+            winner = p;
+        }
+        void lose(Player p)
+        {
+            state = GameState.Over;
+            winner = p1 == p
+                ? p1
+                : p2;
+        }
         /// <summary>
         /// This is called when the game should draw itself.
         /// </summary>
@@ -116,9 +135,18 @@ namespace rockEmSockumMeatbags
             GraphicsDevice.Clear(Color.CornflowerBlue);
             
             // TODO: Add your drawing code here
-            if (state == GameState.Playing)
+            switch (state)
             {
-                drawPlaying(this);
+                case GameState.Paused:
+                    break;
+                case GameState.Playing:
+                    drawPlaying();
+                    break;
+                case GameState.Over:
+                    safeDraw(spriteBatch, () => {
+                        //spriteBatch.DrawString(font, winner., );
+                    });
+                    break;
             }
             base.Draw(gameTime);
         }
