@@ -15,14 +15,15 @@ using Microsoft.Xna.Framework.Media;
 
 namespace rockEmSockumMeatbags
 {
-    class Player
+    class Player : IHasScore
     {
+        public int score { get; private set;}
         private Texture2D healthBar;
         private SpriteFont font;
         private int health = 100;
         private int damage = 10;
         private int speed = 5;
-        private string name = "";
+        public string name { get; private set;}
         private int attackspeed = 2;
         private Rectangle player = new Rectangle(0, 0, 100, 50);
         private int playerNum;
@@ -42,6 +43,7 @@ namespace rockEmSockumMeatbags
             this.healthBar = content.Load<Texture2D>("blank");
             this.font = content.Load<SpriteFont>("font");
             this.playerNum = playerNum;
+            score = 0;
         }
         public int getHealth()
         {
