@@ -1,7 +1,20 @@
-C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\font.xnb
-C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\blank.xnb
-C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\rockEmSockumMeatbags.exe
-C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\rockEmSockumMeatbags.pdb
-C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\obj\x86\Debug\rockEmSockumMeatbags.exe
-C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\obj\x86\Debug\rockEmSockumMeatbags.pdb
+C:\Users\dmcrae17\Documents\Visual Studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\rockEmSockumMeatbags.exe
+C:\Users\dmcrae17\Documents\Visual Studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\rockEmSockumMeatbags.pdb
+C:\Users\dmcrae17\Documents\Visual Studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\dmcrae17\Documents\Visual Studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\obj\x86\Debug\rockEmSockumMeatbags.exe
+C:\Users\dmcrae17\Documents\Visual Studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\obj\x86\Debug\rockEmSockumMeatbags.pdb
+C:\Users\dmcrae17\Documents\Visual Studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\font.xnb
+C:\Users\dmcrae17\Documents\Visual Studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\blank.xnb
+C:\Users\dmcrae17\Documents\Visual Studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\obj\x86\Debug\rockEmSockumMeatbags.csprojResolveAssemblyReference.cache
+C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\font.xnb
+C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\blank.xnb
+C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\rockEmSockumMeatbags.exe
+C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\rockEmSockumMeatbags.pdb
+C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\obj\x86\Debug\rockEmSockumMeatbags.csprojResolveAssemblyReference.cache
+C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\obj\x86\Debug\rockEmSockumMeatbags.exe
+C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\obj\x86\Debug\rockEmSockumMeatbags.pdb
+C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\bs1.xnb
+C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\bs2.xnb
+C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\bs3.xnb
+C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\bs4.xnb

@@ -27,20 +27,35 @@ namespace rockEmSockumMeatbags
         private Rectangle proj = new Rectangle(0, 0, 0, 0);
         private int damage;
         private string skin = "";
+        private Texture2D[] skins;
+        private int texchan1 = 0; 
+          private int x = 0;
 
         public Projectile(ContentManager content, int speed, int locationX, int locationY, int width, int height, int damage, string skin)
         {
+            this.width = width;
+            this.height = height;
             this.speed = speed;
             this.locationX = locationX;
             this.locationY = locationY;
-            this.width = width;
-            this.height = height;
             this.damage = damage;
             this.skin = skin;
             proj.X = locationX;
             proj.Y = locationY;
             proj.Width = width;
             proj.Height = height;
+            
+            if (skin== "ball")
+                 {
+                    x = 4;
+                    
+                }
+                  skins = new Texture2D[x];
+                    skins [0] =content.Load<Texture2D>("bs1");
+                        skins [1] =content.Load<Texture2D>("bs2");
+                        skins [2] =content.Load<Texture2D>("bs3");
+                        skins[3] = content.Load<Texture2D>("bs4");
+            
         }
         public Boolean endX(int endX)
         {
@@ -66,21 +81,19 @@ namespace rockEmSockumMeatbags
         public void draw(SpriteBatch spritebatch)
         {
             spritebatch.Begin();
-            
+            spritebatch.Draw(skins[texchan1], proj, Color.White);
             spritebatch.End();
         }
         public void animate(GameTime gameTime, string skin)
         {
             TimeSpan lasttime1 = new TimeSpan();
-            TimeSpan increment1 = new TimeSpan(0, 0, 0, 0, 100);
-            int texchan1 = 0;   
+            TimeSpan increment1 = new TimeSpan(0, 0, 0, 2, 100);         
             if (gameTime.TotalGameTime - lasttime1 > increment1)
             {
                 texchan1++;
-                if (texchan1 > 1)
+                if (texchan1 >= x)
                 {
                     texchan1 = 0;
-
                 }
                 lasttime1 = gameTime.TotalGameTime;
             }
@@ -95,6 +108,6 @@ namespace rockEmSockumMeatbags
             return false;
 
         }
-
+        
     }
 }

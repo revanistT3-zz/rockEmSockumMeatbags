@@ -19,6 +19,42 @@
       <Output>C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\blank.xnb</Output>
       <Time>2016-05-16T07:58:01.5420819-04:00</Time>
     </Item>
+    <Item>
+      <Source>bs1.png</Source>
+      <Name>bs1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\bs1.xnb</Output>
+      <Time>2016-05-31T08:00:56.8704906-04:00</Time>
+    </Item>
+    <Item>
+      <Source>bs2.png</Source>
+      <Name>bs2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\bs2.xnb</Output>
+      <Time>2016-05-31T08:00:56.8714905-04:00</Time>
+    </Item>
+    <Item>
+      <Source>bs3.png</Source>
+      <Name>bs3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\bs3.xnb</Output>
+      <Time>2016-05-31T08:00:56.8734903-04:00</Time>
+    </Item>
+    <Item>
+      <Source>bs4.png</Source>
+      <Name>bs4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\bs4.xnb</Output>
+      <Time>2016-05-31T08:00:56.8744902-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
