@@ -87,16 +87,17 @@ namespace rockEmSockumMeatbags
         public void animate(GameTime gameTime, string skin)
         {
             TimeSpan lasttime1 = new TimeSpan();
-            TimeSpan increment1 = new TimeSpan(0, 0, 0, 2, 100);         
-            if (gameTime.TotalGameTime - lasttime1 > increment1)
-            {
+            TimeSpan increment1 = new TimeSpan(0, 0, 0, 5, 100);
+            
+           // if (gameTime.TotalGameTime - lasttime1 > increment1)
+          //  {
                 texchan1++;
                 if (texchan1 >= x)
                 {
                     texchan1 = 0;
                 }
-                lasttime1 = gameTime.TotalGameTime;
-            }
+                //lasttime1 = gameTime.TotalGameTime;
+          //  }
         }
         public Boolean hitPlayer(Rectangle playersRectangle)
         {
@@ -108,6 +109,13 @@ namespace rockEmSockumMeatbags
             return false;
 
         }
-        
+        public void goRight()
+        {
+            proj.X += speed;
+        }
+        public void goLeft()
+        {
+            proj.X -= speed;
+        }
     }
 }
