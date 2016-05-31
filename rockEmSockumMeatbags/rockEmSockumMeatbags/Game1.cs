@@ -116,6 +116,13 @@ namespace rockEmSockumMeatbags
 
             testproj.animate(gameTime, "ball");
              testproj.goRight();
+             if (testproj.endX(300) == true)
+             {
+                 Dispose();
+             }
+             
+
+             
 
             // TODO: Add your update logic here
 

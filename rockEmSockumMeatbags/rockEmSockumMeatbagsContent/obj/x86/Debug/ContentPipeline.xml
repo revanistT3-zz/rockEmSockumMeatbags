@@ -7,8 +7,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\font.xnb</Output>
-      <Time>2016-05-16T07:58:01.541082-04:00</Time>
+      <Output>C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\font.xnb</Output>
+      <Time>2016-05-16T08:00:08.8535902-04:00</Time>
     </Item>
     <Item>
       <Source>blank.bmp</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\blank.xnb</Output>
-      <Time>2016-05-16T07:58:01.5420819-04:00</Time>
+      <Output>C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\blank.xnb</Output>
+      <Time>2016-05-16T08:00:08.8545901-04:00</Time>
     </Item>
     <Item>
       <Source>bs1.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\bs1.xnb</Output>
-      <Time>2016-05-31T08:00:56.8704906-04:00</Time>
+      <Output>C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\bs1.xnb</Output>
+      <Time>2016-05-26T07:34:24.2764382-04:00</Time>
     </Item>
     <Item>
       <Source>bs2.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\bs2.xnb</Output>
-      <Time>2016-05-31T08:00:56.8714905-04:00</Time>
+      <Output>C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\bs2.xnb</Output>
+      <Time>2016-05-26T07:34:24.2774352-04:00</Time>
     </Item>
     <Item>
       <Source>bs3.png</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\bs3.xnb</Output>
-      <Time>2016-05-31T08:00:56.8734903-04:00</Time>
+      <Output>C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\bs3.xnb</Output>
+      <Time>2016-05-26T07:34:24.2804262-04:00</Time>
     </Item>
     <Item>
       <Source>bs4.png</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\bs4.xnb</Output>
-      <Time>2016-05-31T08:00:56.8744902-04:00</Time>
+      <Output>C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\bs4.xnb</Output>
+      <Time>2016-05-26T07:34:24.2814232-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -61,10 +61,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbagsContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbagsContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbagsContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbagsContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

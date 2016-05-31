@@ -59,7 +59,11 @@ namespace rockEmSockumMeatbags
         }
         public Boolean endX(int endX)
         {
-            if (locationX == 0 - width || locationX == endX + width)
+            if (proj.X <= (0 - width)) //
+            {
+                return true;
+            }
+            else if (proj.X >= (endX + width))
             {
                 return true;
             }
@@ -67,7 +71,7 @@ namespace rockEmSockumMeatbags
         }
         public Boolean endY(int endY)
         {
-            if (locationY == 0 - height || locationY == endY + height)
+            if (proj.Y == 0 - height || proj.Y == endY + height)
             {
                 return true;
             }
