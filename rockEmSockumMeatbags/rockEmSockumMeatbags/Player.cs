@@ -34,6 +34,8 @@ namespace rockEmSockumMeatbags
         private int speed = 5;
         public string name { get; private set;}
         private int attackspeed = 2;
+        private Texture2D skin;
+        private string sSkin;
         private Rectangle player = new Rectangle(0, 0, 100, 50);
         private int playerNum;
         KeyboardState keyboard1 = Keyboard.GetState();
@@ -43,8 +45,9 @@ namespace rockEmSockumMeatbags
         //private int agility = 0;
         //private int wisdom = 0;
         //private int accuracy = 0;
-        public Player(ContentManager content, int health, int damage, int speed, string name, int attackspeed, int playerNum, StateManager gameState)
+        public Player(ContentManager content, int health, int damage, int speed, string name, int attackspeed, int playerNum, StateManager gameState, string sSkin)
         {
+            this.sSkin = sSkin;
             this.health = health;
             this.damage = damage;
             this.speed = speed;
@@ -102,8 +105,9 @@ namespace rockEmSockumMeatbags
         {
             if (keyboard1.IsKeyDown(Keys.S))
             {
+                player.Height = 50;
             }
-            
+            player.Height = 100;
         }
         public void jump()
         {
@@ -124,5 +128,9 @@ namespace rockEmSockumMeatbags
         {
              player = new Rectangle(0, 0, 100, 50);
         }
+        /*public void Shoot()
+        {
+           new Projectile  
+        }*/
     }
 }

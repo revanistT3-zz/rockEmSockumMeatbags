@@ -59,7 +59,7 @@ namespace rockEmSockumMeatbags
         }
         public Boolean endX(int endX)
         {
-            if (proj.X <= (0 - width)) //
+            if (proj.X <= (0 - width)) 
             {
                 return true;
             }

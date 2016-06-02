@@ -61,9 +61,8 @@ namespace rockEmSockumMeatbags
             
             state = new StateManager(p1, p2, new Timer(this.Content, vec: textLocation), spriteBatch, textLocation, font);
 
-            p1 = new Player(this.Content, 50, 50, 50, "left player", 50,1, state);
-            p2 = new Player(this.Content, 50, 50, 50, "right player", 50,1, state);
-
+            p1 = new Player(this.Content, 50, 50, 50, "left player", 50,1, state, "MarioStandL");
+            p2 = new Player(this.Content, 50, 50, 50, "right player", 50,1, state, "MarioStandL");
             font = this.Content.Load<SpriteFont>("font");
             // TODO: use this.Content to load your game content here
         }
@@ -98,11 +97,12 @@ namespace rockEmSockumMeatbags
             }
             state.update();
             testproj.animate(gameTime, "ball");
-            testproj.goRight();
-            if (testproj.endX(300) == true)
-            {
-                Dispose();
-            }
+             testproj.goLeft();
+             if (testproj.endX(1300) == true)
+             {
+                 //insert item
+                 
+             }
 
             // TODO: Add your update logic here
 
