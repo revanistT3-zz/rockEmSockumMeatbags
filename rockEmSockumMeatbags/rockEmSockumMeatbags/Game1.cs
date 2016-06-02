@@ -96,10 +96,13 @@ namespace rockEmSockumMeatbags
                 case GameState.Playing:
                     break;
             }
-
             state.update();
             testproj.animate(gameTime, "ball");
             testproj.goRight();
+            if (testproj.endX(300) == true)
+            {
+                Dispose();
+            }
 
             // TODO: Add your update logic here
 
