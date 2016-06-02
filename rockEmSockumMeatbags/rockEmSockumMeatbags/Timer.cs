@@ -19,13 +19,12 @@ namespace rockEmSockumMeatbags
     {
         private int increment;
         private SpriteFont font;
-        public Timer(ContentManager content) : this(content ,60*60)
-        {
-        }
-        public Timer(ContentManager content, int increment)
+        private Vector2 vec = new Vector2();
+        public Timer(ContentManager content, Vector2 vec = new Vector2(), int increment = 60 * 60)
         {
             this.increment = increment;
             this.font = content.Load<SpriteFont>("font");
+            this.vec = vec;
         }
 
         public Boolean update() //true  - time:  0
@@ -50,11 +49,12 @@ namespace rockEmSockumMeatbags
                 : "";
             return front + seconds.ToString();
         }
-        public void Draw(SpriteBatch spritebatch, Vector2 vec)
+        public void Draw(SpriteBatch spritebatch)
         {
-            spritebatch.Begin();
-            spritebatch.DrawString(font, toString() , vec, Color.Tomato );
-            spritebatch.End();
+            Func.safeDraw(spritebatch, () =>
+            {
+                spritebatch.DrawString(font, toString(), vec, Color.Tomato);
+            });
         }
     }
 }

@@ -13,11 +13,20 @@ namespace rockEmSockumMeatbags
 {
     class Func
     {
+        public delegate void F<T>(T x);
         public static void safeDraw(SpriteBatch spriteBatch, Action f)
         {
             spriteBatch.Begin();
             f();
             spriteBatch.End();
+        }
+        public static F<Action> getDrawFunc(SpriteBatch spriteBatch) {
+            return (f) =>
+            {
+                spriteBatch.Begin();
+                f();
+                spriteBatch.End();
+            };
         }
     }
 }

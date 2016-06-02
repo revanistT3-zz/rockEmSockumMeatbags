@@ -20,7 +20,16 @@ namespace rockEmSockumMeatbags
         public int score { get; private set;}
         private Texture2D healthBar;
         private SpriteFont font;
-        private int health = 100;
+        public int health
+        {
+            get { return _health; }
+            private set
+            {
+                if (value < 0) gameState.lose(this);
+                _health = value;
+            }
+        }
+        private int _health = 100;
         private int damage = 10;
         private int speed = 5;
         public string name { get; private set;}
@@ -28,12 +37,13 @@ namespace rockEmSockumMeatbags
         private Rectangle player = new Rectangle(0, 0, 100, 50);
         private int playerNum;
         KeyboardState keyboard1 = Keyboard.GetState();
+        private StateManager gameState;
         //private int strength = 0;
         //private int stamina = 0;
         //private int agility = 0;
         //private int wisdom = 0;
         //private int accuracy = 0;
-        public Player(ContentManager content, int health, int damage, int speed, string name, int attackspeed, int playerNum)
+        public Player(ContentManager content, int health, int damage, int speed, string name, int attackspeed, int playerNum, StateManager gameState)
         {
             this.health = health;
             this.damage = damage;
@@ -44,6 +54,7 @@ namespace rockEmSockumMeatbags
             this.font = content.Load<SpriteFont>("font");
             this.playerNum = playerNum;
             score = 0;
+            this.gameState = gameState;
             //private int strength = 0;
             //private int stamina = 0;
             //private int agility = 0;

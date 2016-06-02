@@ -20,30 +20,12 @@ namespace rockEmSockumMeatbags
         SpriteBatch spriteBatch;
         Player p1;
         Player p2;
-        Timer timer;
-        GameState state;
+        Vector2 textLocation;
+        
+        StateManager state;
         Player winner = null;
         SpriteFont font;
         Projectile testproj;
-
-        public void playing()
-        {
-            state = timer.update()
-                ? GameState.Over
-                : state;
-        }
-        public void drawPlaying()
-        {
-            p1.drawHud(spriteBatch, new Rectangle(10, 0, 300, 30));
-            p2.drawHud(spriteBatch, new Rectangle(GraphicsDevice.Viewport.Width - 310, 0, 300, 30));
-            timer.Draw(spriteBatch, new Vector2(GraphicsDevice.Viewport.Width / 2, 0));
-        }
-        public static void safeDraw(SpriteBatch spriteBatch, Action f)
-        {
-            spriteBatch.Begin();
-            f();
-            spriteBatch.End();
-        }
 
         public Game1()
         {
@@ -72,12 +54,16 @@ namespace rockEmSockumMeatbags
         protected override void LoadContent()
         {
             // Create a new SpriteBatch, which can be used to draw textures.
-            testproj = new Projectile(Content, 10, 5, 100, 50, 50, 1, "ball");
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            timer = new Timer(this.Content);
-            p1 = new Player(this.Content, 50, 50, 50, "left player", 50,1);
-            //p1.load;
-            p2 = new Player(this.Content, 50, 50, 50, "right player", 50,1);
+
+            textLocation = new Vector2(GraphicsDevice.Viewport.Width / 2, 0);
+            testproj = new Projectile(Content, 10, 5, 100, 50, 50, 1, "ball");
+            
+            state = new StateManager(p1, p2, new Timer(this.Content, vec: textLocation), spriteBatch, textLocation, font);
+
+            p1 = new Player(this.Content, 50, 50, 50, "left player", 50,1, state);
+            p2 = new Player(this.Content, 50, 50, 50, "right player", 50,1, state);
+
             font = this.Content.Load<SpriteFont>("font");
             // TODO: use this.Content to load your game content here
         }
@@ -102,36 +88,22 @@ namespace rockEmSockumMeatbags
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
            
-            switch (state)
+            switch (state.state)
             {
                 case GameState.Paused:
 
-                    break;
+                    return;
                 case GameState.Playing:
-                    playing();
                     break;
-
             }
 
-
+            state.update();
             testproj.animate(gameTime, "ball");
-             testproj.goRight();
+            testproj.goRight();
 
             // TODO: Add your update logic here
 
             base.Update(gameTime);
-        }
-        void win(Player p)
-        {
-            state = GameState.Over;
-            winner = p;
-        }
-        void lose(Player p)
-        {
-            state = GameState.Over;
-            winner = p1 == p
-                ? p1
-                : p2;
         }
         /// <summary>
         /// This is called when the game should draw itself.
@@ -140,26 +112,24 @@ namespace rockEmSockumMeatbags
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
-            
-            
-           
 
-
-            
             // TODO: Add your drawing code here
-            switch (state)
+            switch (state.state)
             {
                 case GameState.Paused:
-                    break;
+
+                    return;
                 case GameState.Playing:
-                    drawPlaying();
                     break;
                 case GameState.Over:
-                    safeDraw(spriteBatch, () => {
-                        //spriteBatch.DrawString(font, winner., );
+                    Func.safeDraw(spriteBatch, () => {
+                        spriteBatch.DrawString(font, winner.name, textLocation , Color.Red);
                     });
-                    break;
+                    return;
             }
+            p1.drawHud(spriteBatch, new Rectangle(10, 0, 300, 30));
+            p2.drawHud(spriteBatch, new Rectangle(GraphicsDevice.Viewport.Width - 310, 0, 300, 30));
+
             base.Draw(gameTime);
             testproj.draw(spriteBatch);
         }
