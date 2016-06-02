@@ -55,6 +55,15 @@
       <Output>C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\bs4.xnb</Output>
       <Time>2016-05-26T07:34:24.2814232-04:00</Time>
     </Item>
+    <Item>
+      <Source>MarioStandL.png</Source>
+      <Name>MarioStandL</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\MarioStandL.xnb</Output>
+      <Time>2016-06-02T07:56:42.4558739-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

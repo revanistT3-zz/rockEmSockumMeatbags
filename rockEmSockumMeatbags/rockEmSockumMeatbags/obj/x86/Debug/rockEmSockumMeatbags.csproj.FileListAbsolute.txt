@@ -21,3 +21,4 @@ C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\roc
 C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\bs2.xnb
 C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\bs3.xnb
 C:\Users\dmcrae17\documents\visual studio 2010\Projects\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\bs4.xnb
+C:\Users\jdark16\Documents\GitHub\rockEmSockumMeatbags\rockEmSockumMeatbags\rockEmSockumMeatbags\bin\x86\Debug\Content\MarioStandL.xnb

@@ -4,3 +4,4 @@ Content\bs1.xnb
 Content\bs2.xnb
 Content\bs3.xnb
 Content\bs4.xnb
+Content\MarioStandL.xnb

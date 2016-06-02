@@ -75,9 +75,9 @@ namespace rockEmSockumMeatbags
             testproj = new Projectile(Content, 10, 5, 100, 50, 50, 1, "ball");
             spriteBatch = new SpriteBatch(GraphicsDevice);
             timer = new Timer(this.Content);
-            p1 = new Player(this.Content, 50, 50, 50, "left player", 50,1);
+            p1 = new Player(this.Content, 50, 50, 50, "left player", 50,1,"MarioStandL");
             //p1.load;
-            p2 = new Player(this.Content, 50, 50, 50, "right player", 50,1);
+            p2 = new Player(this.Content, 50, 50, 50, "right player", 50,1,"MarioStandL");
             font = this.Content.Load<SpriteFont>("font");
             // TODO: use this.Content to load your game content here
         }
@@ -115,10 +115,11 @@ namespace rockEmSockumMeatbags
 
 
             testproj.animate(gameTime, "ball");
-             testproj.goRight();
-             if (testproj.endX(300) == true)
+             testproj.goLeft();
+             if (testproj.endX(1300) == true)
              {
-                 Dispose();
+                 //insert item
+                 
              }
              
 
