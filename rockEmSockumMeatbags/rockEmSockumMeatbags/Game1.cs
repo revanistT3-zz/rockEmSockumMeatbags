@@ -117,18 +117,9 @@ namespace rockEmSockumMeatbags
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
-            switch (state.state)
+            if (state.state == GameState.Paused)
             {
-                case GameState.Paused:
-
-                    return;
-                case GameState.Playing:
-                    break;
-                case GameState.Over:
-                    Func.safeDraw(spriteBatch, () => {
-                        spriteBatch.DrawString(font, winner.name, textLocation , Color.Red);
-                    });
-                    return;
+                return;
             }
             p1.drawHud(spriteBatch, new Rectangle(10, 0, 300, 30));
             p2.drawHud(spriteBatch, new Rectangle(GraphicsDevice.Viewport.Width - 310, 0, 300, 30));
